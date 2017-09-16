@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+<h2>Первая программа на JavaScript</h2>
+<!--<script src="js/myscrypt.js"></script>-->
+<script>
+    function multiply(n){
+        var x = n;
+        return function(m){ return x * m;};
+    }
+    var fn1 = multiply(5);
+    var result1 = fn1(6); // 30
+    document.writeln(result1 + "<br/>");
+    console.log(result1); // 30
+
+    var fn2= multiply(4);
+    var result2 = fn2(6); // 24
+    document.writeln(result2 + "<br/>");
+    console.log(result2); // 24
+</script>
+</body>
+</html>
